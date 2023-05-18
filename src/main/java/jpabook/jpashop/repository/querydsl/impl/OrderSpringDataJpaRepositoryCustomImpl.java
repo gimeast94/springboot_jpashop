@@ -1,12 +1,8 @@
 package jpabook.jpashop.repository.querydsl.impl;
 
-import com.querydsl.core.types.Predicate;
-import com.querydsl.core.types.dsl.BooleanExpression;
 import jpabook.jpashop.domain.Order;
-import jpabook.jpashop.domain.OrderStatus;
 import jpabook.jpashop.domain.QMember;
 import jpabook.jpashop.domain.QOrder;
-import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.repository.OrderSearch;
 import jpabook.jpashop.repository.querydsl.OrderSpringDataJpaRepositoryCustom;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;

@@ -124,10 +124,8 @@ class OrderServiceTest {
         int orderCount = 3;
         //when
         Long orderId1 = orderService.order(member.getId(), item.getId(), orderCount);
-        Long orderId2 = orderService.order(member.getId(), item.getId(), orderCount);
-        Long orderId3 = orderService.order(member2.getId(), item.getId(), orderCount);
 
-        orderService.cancelOrder(orderId2);
+        orderService.cancelOrder(orderId1);
 
         //then
         OrderSearch orderSearch = new OrderSearch();

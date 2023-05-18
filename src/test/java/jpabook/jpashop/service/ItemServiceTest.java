@@ -1,8 +1,6 @@
 package jpabook.jpashop.service;
 
-import jpabook.jpashop.domain.dto.BookDto;
 import jpabook.jpashop.domain.item.Book;
-import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.repository.ItemRepository;
 
 import org.junit.jupiter.api.Assertions;
