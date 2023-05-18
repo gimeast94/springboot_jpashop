@@ -23,7 +23,7 @@ public class OrderSpringDataJpaRepositoryCustomImpl extends QuerydslRepositorySu
         QMember qMember = QMember.member;
 
         List<Order> orderList = from(qOrder)
-                .join(qOrder.member, qMember)
+                .join(qOrder.member, qMember).fetchJoin()
                 .where(orderSearch.getOrderStatus() == null ? null : qOrder.status.eq(orderSearch.getOrderStatus()),
                         !StringUtils.hasText(orderSearch.getMemberName()) ? null : qMember.name.likeIgnoreCase("%"+orderSearch.getMemberName()+"%"))
                 .limit(1000)
